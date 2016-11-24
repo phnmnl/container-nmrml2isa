@@ -1,6 +1,10 @@
 FROM ubuntu:16.04
 MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
 
+LABEL version="0.1.0"
+LABEL software="nmrml2isa"
+LABEL software.version="0.3.0"
+
 RUN apt-get -y update && apt-get -y install --no-install-recommends python-pip && \
     pip install --upgrade pip && pip install -U setuptools && pip install six && \
     pip install nmrml2isa==0.3.0 && \
