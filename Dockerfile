@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
 
-LABEL version="0.1.0"
+LABEL version="0.1"
 LABEL software="nmrml2isa"
 LABEL software.version="0.3.0"
 
