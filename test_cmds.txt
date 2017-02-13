@@ -1,0 +1,2 @@
+which nmrml2isa 
+which runTest1.sh
