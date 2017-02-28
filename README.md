@@ -32,6 +32,7 @@ nmrml2isa is a Python3 program that can automatically generate ISA-Tab document 
 ## Container Contributors
 
 - [Pablo Moreno](https://github.com/pcm32) (EMBL-EBI)
+- [Thomas N. Lawson](https://github.com/Tomnl) (U. of Birmingham)
 
 ## Website
 
@@ -44,18 +45,22 @@ nmrml2isa is a Python3 program that can automatically generate ISA-Tab document 
 
 ## Installation 
 
+This tool is preloaded in PhenoMeNal Galaxy deployments.
+
 For local individual installation:
 
 ```bash
-docker pull docker-registry.phenomenal-h2020.eu/phnmnl/nmrml2isa
+docker pull container-registry.phenomenal-h2020.eu/phnmnl/nmrml2isa
 ```
 
 ## Usage Instructions
 
+Available on PhenoMeNal Galaxy instances under PhenoMeNal H2020 Tools -> NMR.
+
 For direct docker usage:
 
 ```bash
-docker run docker-registry.phenomenal-h2020.eu/phnmnl/nmrml2isa ...
+docker run -v $PWD:/data container-registry.phenomenal-h2020.eu/phnmnl/nmrml2isa -i /data/nmrml_files/ -o /data/out_folder -s name_of_study
 ```
 
 ## Publications
