@@ -1,36 +1,68 @@
-# container-nmrml2isa
+![Logo](logo.png)
 
-Version:1.0.0 
+# nmrml2isa
+Version: 0.3.0 
 
-## Short description
-A docker container for nmrml2isa suite, allowing creating an ISA-Tab stub document from a collection of nmrML files
+## Short Description
+
+A container image definition for the nmrml2isa python tool
 
 ## Description
-a docker container for a microservice for extraction data acquisition parameters from a set of nmrML document and bootstrap the creation of an ISA experiment metadata file.  As an option, ISA syntactic validation may be invoked by providing two additional arguments: a boolean set to true to indicate validation is requested and a path to an ISA configuration.
+
+nmrml2isa is a Python3 program that can automatically generate ISA-Tab document structure metadata files from raw XML metabolomics data files (nmrML open access data format). The nmrml2ISA tool provides the backbone of ISA-Tab metabolomics study which can then be edited with an ISA editing tool, ISAcreator.
+
+## Key features
+
+- Extract meta information from mzML files and stores it as either python dictionary or JSON format
+- Creates an ISA-Tab file structure with relevant meta information filled in.
+- Add additional metadata that cannot be parsed from mzML files to the ISA-Tab files through a JSON formatted dictionnary.
 
 ## Functionality
+
 - Other Tools
 
+## Approaches
+  
+## Instrument Data Types
+
 ## Tool Authors
-- [ISA Team](http://isa-tools.org)
+
+- [Martin Larralde](https://github.com/althonos)
 
 ## Container Contributors
-- [Martin Larralde](https://github.com/althonos) (Ecole Normale Superieure de Cachan)
-- [Thomas Lawson](https://github.com/Tomnl) (University of Birmingham)
-- [Pablo Moreno](https://github.com/pcm32) (European Bioinformatics Institute)
+
+- [Pablo Moreno](https://github.com/pcm32) (EMBL-EBI)
+- [Thomas N. Lawson](https://github.com/Tomnl) (U. of Birmingham)
+
+## Website
+
+- https://github.com/ISA-tools/nmrml2isa
+
 
 ## Git Repository
+
 - https://github.com/phnmnl/container-nmrml2isa.git
 
-## Installation
-For local installation of the container:
-```
-docker pull docker-registry.phenomenal-h2020.eu/phnmnl/container-nmrml2isa
-```
-## Future Developments
-- multidimensional NMR
+## Installation 
 
+This tool is preloaded in PhenoMeNal Galaxy deployments.
+
+For local individual installation:
+
+```bash
+docker pull container-registry.phenomenal-h2020.eu/phnmnl/nmrml2isa
+```
+
+## Usage Instructions
+
+Available on PhenoMeNal Galaxy instances under PhenoMeNal H2020 Tools -> NMR.
+
+For direct docker usage:
+
+```bash
+docker run -v $PWD:/data container-registry.phenomenal-h2020.eu/phnmnl/nmrml2isa -i /data/nmrml_files/ -o /data/out_folder -s name_of_study
+```
 
 ## Publications
-- ML2ISA, manuscript submitted
-- Sansone, Susanna-Assunta, Rocca-Serra, Philippe, Gonzalez-Beltran, Alejandra, Johnson, David, & ISA Community. (2016, October 28). ISA Model and Serialization Specifications 1.0. Zenodo. http://doi.org/10.5281/zenodo.163640
+
+- Rocca-Serra, P., Brandizi, M., Maguire, E., Sklyar, N., Taylor, C., Begley, K., ... & Neumann, S. (2010). ISA software suite: supporting standards-compliant experimental annotation and enabling curation at the community level. Bioinformatics, 26(18), 2354-2356.
