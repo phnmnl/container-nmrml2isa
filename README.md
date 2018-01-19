@@ -19,11 +19,16 @@ nmrml2isa is a Python3 program that can automatically generate ISA-Tab document 
 
 ## Functionality
 
-- Other Tools
+- Data Management / Study Metadata Extraction from Raw Data
 
 ## Approaches
-  
+
+- Metabolomics
+- Isotopic Labelling Analysis
+
 ## Instrument Data Types
+
+- NMR
 
 ## Tool Authors
 
@@ -33,6 +38,7 @@ nmrml2isa is a Python3 program that can automatically generate ISA-Tab document 
 
 - [Pablo Moreno](https://github.com/pcm32) (EMBL-EBI)
 - [Thomas N. Lawson](https://github.com/Tomnl) (U. of Birmingham)
+- [Philippe Rocca-Serra](https://github.com/proccaserra) (University of Oxford)
 
 ## Website
 
