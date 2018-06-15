@@ -1,7 +1,7 @@
 ![Logo](logo.png)
 
 # nmrml2isa
-Version: 0.3.0 
+Version: 1.1.0 
 
 ## Short Description
 
